@@ -1,4 +1,4 @@
-class SchoolClassController < ApplicationController
+class SchoolClassesController < ApplicationController
 
   def new
     @school_class = SchoolClass.new
@@ -29,5 +29,5 @@ class SchoolClassController < ApplicationController
 
   def post_params(*args)
     params.require(:school_class).permit(*args)
-  end 
+  end
 end
